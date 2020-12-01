@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="with=derivice-with, inicial-scale=1.0">
+    <link rel="stlyesheet" href="/static/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/css/bootstrap.css">
+    <link rel="stlyesheet" href="/static/css/estilo.css">
+        <title> Principal </title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="{% url 'principal' %}" class="nav-link">
+                        principal
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            {% block contenido %}
+            
+            {% endblock contenido %}
+        </div>
+
+    </body>
+</html>

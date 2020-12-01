@@ -1,0 +1,34 @@
+h2 {
+    margin-bottom: 50px;
+  }
+  
+  .containerd {
+    text-align: center;
+    overflow: hidden;
+    width: 700px;
+  }
+  
+  .containerd table {
+    width: 100%;
+  }
+  
+  .containerd td, .containerd th {
+    padding: 10px;
+  }
+  
+  .containerd td:first-child, .containerd th:first-child {
+    padding-left: 20px;
+  }
+  
+  .containerd td:last-child, .containerd th:last-child {
+    padding-right: 20px;
+  }
+  
+  .containerd th {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  .espce{
+    margin-right: 10px;
+  }

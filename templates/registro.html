@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block contenido %} 
+    <input type ="email" id="email" placeholder="Correo: "/>
+    <input type ="password" id="pass" placeholder="Contraseña: "/>
+    <button onclick="enviar">Enviar</button>
+    !-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDhAajFQwNbPMIYtAD72JWs1E_D2RNazdU",
+        authDomain: "calidadenergiam.firebaseapp.com",
+        databaseURL: "https://calidadenergiam.firebaseio.com",
+        projectId: "calidadenergiam",
+        storageBucket: "calidadenergiam.appspot.com",
+        messagingSenderId: "814849064898",
+        appId: "1:814849064898:web:f2a644b5e712098300e05b",
+        measurementId: "G-Z7L0Q0LS92"
+        };
+   // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
+{% endblock contenido %}
